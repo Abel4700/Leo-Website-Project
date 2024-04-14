@@ -121,3 +121,9 @@ footer {
     text-align: center;
     z-index: 1000; /* Ensure the header appears above other content */
 }
+.navigation ul li a.active {
+    /* Define the styles for the active navigation link */
+    background-color: #00b5dd; /* Change background color */
+    color: #ffffff; /* Change text color */
+    font-weight: bold; /* Increase font weight */
+}

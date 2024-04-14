@@ -1,0 +1,123 @@
+/* testimonials.css */
+
+/* Header styles */
+.header {
+  background-color: #dd6300;
+  padding: 5px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.1em;
+  color: #ffffff;
+}
+
+/* Navigation styles */
+.navigation ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.navigation ul li {
+  margin-right: 20px;
+}
+
+.navigation ul li:last-child {
+  margin-right: 0;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.navigation ul li a:hover {
+  color: #555;
+}
+
+/* Tours styles */
+.tours {
+  padding: 60px 0;
+}
+
+.tours h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Add style for the testimonials section */
+.testimonials {
+  text-align: center;
+  padding: 60px 0;
+}
+
+/* Center the content horizontally and vertically */
+.testimonials-container {
+  display: flex;
+  flex-direction: row; /* Align items in a row horizontally */
+  justify-content: center; /* Center items horizontally */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+
+/* Style for testimonial cards */
+.tour-card {
+  background-color: #eee;
+  margin: 30px;
+  padding: 40px;
+  border-radius: 5px;
+  text-align: center;
+  width: 30%; /* Adjust width as needed */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for testimonial cards */
+.tour-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact styles */
+.contact {
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* Ensure the header appears above other content */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #dd6300;
+  padding: 10px;
+  text-align: center;
+  z-index: 1000;
+}
+
+/* Define the styles for the active navigation link */
+.navigation ul li a.active {
+  background-color: #0072dd;
+  color: #ffffff;
+  font-weight: bold;
+}
