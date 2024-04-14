@@ -1,3 +1,21 @@
+/* Ensure the header appears above other content */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #dd6300;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000; /* Ensure the header appears above other content */
+}
+
+/* Define the styles for the active navigation link */
+.navigation ul li a.active {
+    background-color: #00b5dd; /* Change background color */
+    color: #ffffff; /* Change text color */
+    font-weight: bold; /* Increase font weight */
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -39,8 +57,8 @@ body {
 }
 
 .tour-card {
-    background-color: #eee;
-    margin: 10px;
+    background-color: #adb19e;
+    margin: 20px;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
