@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #dd6300;
+    background-color: z#dd6300;
     padding: 10px;
     text-align: center;
     z-index: 1000; /* Ensure the header appears above other content */
@@ -57,7 +57,7 @@ body {
 }
 
 .tour-card {
-    background-color: #adb19e;
+    background-color: #9ea2b1;
     margin: 20px;
     padding: 20px;
     border-radius: 5px;
@@ -145,3 +145,192 @@ footer {
     color: #ffffff; /* Change text color */
     font-weight: bold; /* Increase font weight */
 }
+.destination-link {
+    text-align: center; /* Center the link */
+    margin-top: 400px; /* Add some space between the card and the link */
+  }
+  .tour-card {
+  width: 300px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+}
+.tour-card {
+    width: 300px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+  }
+  
+  .destination-link {
+    text-align: center; /* Center the link */
+  }
+  .tour-card {
+    width: 300px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+  }
+  
+  .destination-link {
+    text-align: center; /* Center the link */
+ 
+    .tour-card {
+        background-size: cover;
+        background-position: center;
+        /* Add other styles as needed */
+      }
+      .tour-card {
+        width: 300px; /* Adjust width as needed */
+        height: 200px; /* Adjust height as needed */
+        background-size: contain;
+        background-position: center;
+        margin-bottom: 20px;
+    }
+    .tour-cards {
+        display: flex;
+        justify-content: space-around; /* Adjust alignment as needed */
+      }
+      
+      .tour-card {
+        text-align: center;
+        width: 200px; /* Adjust width as needed */
+      }
+      
+      .tour-card img {
+        width: 100%;
+        height: auto;
+      }
+      .tour-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; /* Adjust as needed */
+        align-items: flex-start; /* Align items to the start of the flex container */
+        gap: 20px; /* Add some space between cards */
+      }
+      .tour-card {
+        flex-basis: calc(50% - 20px); /* Two cards per row with a 20px gap */
+        margin-bottom: 20px; /* Add some space between rows */
+      }
+      .tour-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+      }
+      /* Ensure the header appears above other content */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #dd6300;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000; /* Ensure the header appears above other content */
+}
+
+/* Define the styles for the active navigation link */
+.navigation ul li a.active {
+    background-color: #00b5dd; /* Change background color */
+    color: #ffffff; /* Change text color */
+    font-weight: bold; /* Increase font weight */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.tours {
+    padding: 40px 0;
+}
+
+.tours h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tour-card {
+    background-color: #b1aa9e;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    width: 30%;
+    transition: all 0.3s ease-in-out;
+}
+
+.tour-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px rgba(207, 156, 79, 0.1);
+}
+
+.activities,
+.contact {
+    text-align: center;
+}
+
+.activities h2,
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Navigation styles */
+.navigation ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    display: flex; /* Change display to flex */
+    justify-content: center; /* Align items horizontally at center */
+    margin-top: 10px; /* Add margin to separate from the title */
+    background-color: #f0f0f0; /* Add background color */
+    padding: 10px; /* Add padding for spacing */
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+.navigation ul li {
+    margin-right: 20px; /* Adjust spacing between items */
+}
+
+@media screen and (max-width: 768px) {
+    /* Styles for small screens (e.g., mobile devices) */
+    .navigation ul {
+        flex-direction: column;
+    }
+}
+
+/* Add any additional styles as needed */
+.tour-cards {
+    display: flex;
+    justify-content: center; /* Align items horizontally at the center */
+    flex-wrap: wrap; /* Ensure the cards wrap properly */
+  
