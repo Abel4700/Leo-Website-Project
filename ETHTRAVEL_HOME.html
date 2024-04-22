@@ -2,20 +2,121 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - Ethiopia Travel Buddy</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ethiopia Travel Buddy</title>
+  <link rel="stylesheet" href="ethiopiatravelbuddy_2.css">
 </head>
 <body>
   <header class="header">
-    <h1 class="title">Welcome to Ethiopia Travel Buddy</h1>
-    <!-- Other header content -->
-  </header>
+    <h1 class="title">Ethiopia Travel Buddy</h1>
+    <p class="subtitle">Your Trusted Travel Companion</p>
+    </header>
+    <!-- Add this inside the <body> tag, after the <header> -->
+<button class="hamburger-menu" onclick="toggleMenu()">☰</button>
 
-  <!-- Main content for home page -->
+    <nav class="navigation">
+        <ul>
+            <li><a href="ETHTRAVEL_SAMPLE.html" class="active">Home</a></li>
+            <li><a href="ETHTRAVEL_ABOUTUS.html">About Us</a></li>
+            <li><a href="ETHTRAVEL_BLOG.html">Blog</a></li>
+            <li><a href="ETHTRAVEL_TESTIMONIALS.html">Testimonials</a></li>
+            <li><a href="ETHTRAVEL_CONTACTUS_2.html">Contact Us</a></li>
+            <li><a href="ETHTRAVEL_FAQS.html">FAQs</a></li>
+        </ul>
+    </nav>
+
+  <section class="hero">
+    
+    <div class="image-container">
+</div>
+    <div class="hero-content">
+      <h2>Welcome to Ethiopia Travel Buddy</h2>
+      <p>Explore the wonders of Ethiopia with us</p>
+    </div>
+    
+  </section>
+
+  <section class="tour-cards">
+    <div class="tour-card omo-valley" data-destination="omo-valley.html">
+      <a href="omo-valley.html">
+        <!-- Place your image here -->
+        
+        <h3>Omo Valley</h3>
+      </a>
+    </div>
+
+    <div class="tour-card danakil-depression" data-destination="danakil-depression.html">
+      <a href="danakil-depression.html">
+      <!-- Place your image here -->
+      <h3>Danakil Depression</h3> 
+    </a>   
+    </div>
+  
+
+    <div class="tour-card bale-mountains" data-destination="bale.html">
+      <a href="bale.html">
+      <!-- Place your image here -->
+      <h3>Bale Mountains</h3>
+      </a>
+    </div>
+    
+    <div class="tour-card harar" data-destination="harar.html">
+      <a href="harar.html">
+      <!-- Place your image here -->
+      
+      <h3>Harar</h3>
+      </a>
+    </div>
+    
+    <div class="tour-card northern-highlands" data-destination="northern_highlands.html">
+      <a href="northern_highlands.html">
+      <!-- Place your image here -->
+     
+      <h3>Northern Highlands</h3>
+      </a>
+    </div>
+    
+    <div class="tour-card addis-ababa" data-destination="addis ababa.html">
+      <a href="addisababa.html">
+      <!-- Place your image here -->
+     
+      <h3>Addis Ababa</h3>
+      </a>
+    </div>
+
+    <div class="tour-card western ethiopia" data-destination="western_ethiopia.html">
+      <a href="western_ethiopia.html">
+      <!-- Place your image here -->
+     
+      <h3>Western Ethiopia</h3>
+      </a>
+    </div>
+  </section>
+
+  <section class="activities">
+    <h2>Unforgettable Activities</h2>
+    <p>From [Activity 1] to [Activity 3], we have something for everyone.</p>
+    <ul>
+      <li><i class="fas fa-rafting"></i> [Activity 1]</li>
+      <li><i class="fas fa-horse-head"></i> [Activity 2]</li>
+      <li><i class="fas fa-waterfall"></i> Visit [Waterfall Name]</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Get in touch to book your dream vacation!</p>
+    <ul>
+      <li><i class="fas fa-phone"></i> +251 92 612 0072</li>
+      <li><i class="fas fa-envelope"></i>info@ethiopiatravelbuddy.com</li>
+    </ul>
+  </section>
 
   <footer>
-    <!-- Footer content -->
+    <p>&copy; Ethiopia Travel Buddy. All Rights Reserved.</p>
   </footer>
+  <script src="style1.js"></script>
+  <script src="style2_CardClickable.js"></script>
+  <script src="Style3_Hamburger_menu.js"></script>   
 </body>
 </html>

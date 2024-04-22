@@ -1,0 +1,365 @@
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.header {
+  background: #dd6300;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+}
+
+.subtitle {
+  margin: 0;
+  font-style: italic;
+}
+
+
+.navigation ul {
+  list-style-type: none;
+  background: #555;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.navigation ul li {
+  display: inline;
+}
+
+.navigation ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.navigation ul li a.active,
+.navigation ul li a:hover {
+  background: #444;
+}
+
+/* Hero section styles */
+.hero {
+  position: relative;
+  height: 80px; /* Adjust height as needed */
+  background-image: url('Images/About Us_BackgroundPic_2.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 295px 0;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* About Us section styles */
+.about-us {
+  max-width: 1000px;
+  margin: 0px auto 0px; /* Adjusted margin to push it below the hero section */
+  padding: 40px;
+  text-align: center;
+}
+
+.mission-statement,
+.why-choose-us {
+  max-width: 1000px;
+  margin: 0px auto 0px;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Mission Statement and Why Choose Us section styles */
+.mission-statement,
+.why-choose-us {
+  margin: 50px auto 30px;
+  text-align: center;
+  padding: 0px;
+}
+
+.mission-statement h2,
+.why-choose-us h2 {
+  margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.why-choose-us ul {
+  list-style: none; /* Remove default list styles */
+  padding: 0;
+}
+
+.why-choose-us ul li {
+  text-align: center; /* Align list items to the center */
+  margin-bottom: 10px; /* Add space between list items */
+}
+
+/* Contact section styles */
+.contact {
+  background-color: #f0f0f0;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact ul li {
+  margin-bottom: 10px; /* Add space between contact items */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Responsive container styles */
+.container {
+  max-width: 1000px; /* Adjust the maximum width as needed */
+  margin: 0 auto 30px; /* Center the container horizontally and add space below */
+  padding: 20px; /* Add padding around the content */
+  border: 1px solid #c8a35e; /* Add border for visual structure */
+  border-radius: 5px; /* Optional: Add border radius for rounded corners */
+  background-color: #dbcfcf; /* Optional: Set a background color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for depth */
+  margin-bottom: 50px; /* Add space below the container */;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .navigation ul {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .navigation ul li {
+    margin-bottom: 10px; /* Add space between navigation items */
+  }
+
+  .hero {
+    padding: 150px 0; /* Reduce padding for smaller screens */
+  }
+
+  .hero-content {
+    width: 90%; /* Adjust width for smaller screens */
+    text-align: center;
+  }
+
+  .container {
+    width: 90%; /* Use a percentage-based width for smaller screens */
+    margin-bottom: 50px; /* Adjust spacing between containers */
+    margin-top: 20px;
+  }
+
+  .header,
+  .navigation {
+    position: static; /* Reset position for scrolling */
+  }
+
+  .hamburger-menu {
+    display: block; /* Show the hamburger menu */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1001; /* Above the header */
+  }
+
+  .navigation {
+    display: none; /* Hide the navigation list */
+    position: absolute;
+    top: 60px; /* Below the hamburger icon */
+    width: 100%;
+    background-color: #f0f0f0;
+  }
+
+  .navigation.active ul {
+    display: flex; /* Show navigation when active */
+  }
+
+  .navigation ul li {
+    text-align: center;
+    padding: 10px 0; /* Tap targets */
+    display: block; /* Full width links */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5em; /* Smaller screens font size */
+  }
+
+  .subtitle {
+    font-size: 1em;
+  }
+
+  .navigation ul li a {
+    padding: 10px; /* Larger tap targets */
+  }
+
+  .hero {
+    padding: 100px 0; /* Further reduce padding for very small screens */
+  }
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Optional: Center content horizontally */
+}
+/* Our Team Section */
+.our-team {
+  text-align: center;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  margin: 1rem;
+  text-align: center;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Gallery Section */
+.gallery {
+  text-align: center;
+}
+
+.gallery-images {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  margin: 1rem;
+}
+
+.gallery-item img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+  /* Contact Us Section */
+  .contact-section {
+    background-color: #fff;
+    padding: 2em;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    color: #dd6300;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-top: 1em;
+    text-align: left;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    background-color: #00b5dd;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0094aa;
+  }
+  footer {
+    background: #333; /* Dark background for the footer */
+    color: #fff; /* White text color */
+    text-align: center; /* Center-align the text */
+    padding: 1rem 0; /* Padding above and below the text */
+    font-size: 0.8rem; /* Smaller font size for the footer text */
+  }
+  footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-left,
+  .footer-right {
+    padding: 0 10%; /* Adust the percentage as needed */
+  }
+  
+  @media (max-width: 768px) {
+    footer {
+      flex-direction: column;
+    }
+  
+    .footer-left,
+    .footer-right {
+      padding: 0.5rem 1rem;
+    }
+  }
+  

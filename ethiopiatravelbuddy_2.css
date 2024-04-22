@@ -1,69 +1,91 @@
-/* Ensure the header appears above other content */
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: z#dd6300;
-    padding: 10px;
-    text-align: center;
-    z-index: 1000; /* Ensure the header appears above other content */
-}
-
-/* Define the styles for the active navigation link */
-.navigation ul li a.active {
-    background-color: #00b5dd; /* Change background color */
-    color: #ffffff; /* Change text color */
-    font-weight: bold; /* Increase font weight */
-}
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-}
-
-.header {
-    background-color: #dd6300;
-    padding: 5px;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+  }
+  
+  .header {
+    background: #dd6300;
+    color: #fff;
+    padding: 1rem 0;
     text-align: center;
-}
+  }
+  
+  .title {
+    margin: 0;
+  }
+  
+  .subtitle {
+    margin: 0;
+    font-style: italic;
+  }
 
-.title {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
+/* Updated Navigation styles */
+.navigation ul {
+    list-style-type: none;
+    background: #555; /* Changed to match testimonials page */
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+  
+  .navigation ul li {
+    display: inline;
+  }
+  
+  .navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .navigation ul li a.active,
+  .navigation ul li a:hover {
+    
+    background-color: #444; /* Active link background color */
+  }
 
-.subtitle {
-    font-size: 1.1em;
-    color: #ffffff;
-}
-
+/* Hero section styles */
 .hero {
+    position: relative;
     text-align: center;
 }
 
 .hero img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
+    display: block; /* Remove any extra space below the image */
 }
 
-.tours {
-    padding: 40px 0;
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Adjust the color as needed for visibility */
+    z-index: 2; /* Ensure it's above the image */
 }
 
-.tours h2 {
-    text-align: center;
-    margin-bottom: 20px;
+/* Tour cards section styles */
+.tour-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0px;
 }
 
 .tour-card {
+    flex: 0 1 calc(40% - 50px);
     background-color: #9ea2b1;
     margin: 20px;
-    padding: 20px;
+    padding: 60px;
     border-radius: 5px;
     text-align: center;
-    display: inline-block;
-    width: 30%;
     transition: all 0.3s ease-in-out;
 }
 
@@ -72,223 +94,13 @@ body {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
-.activities {
-    text-align: center;
-}
-
-.activities h2 {
-    margin-bottom: 20px;
-}
-
-.contact {
-    text-align: center;
-}
-
-.contact h2 {
-    margin-bottom: 20px;
-}
-
-footer {
-    text-align: center;
-    background-color: #f0f0f0;
-    padding: 20px;
-}
-
-/* Navigation styles */
-.navigation ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0;
-    display: flex; /* Change display to flex */
-    justify-content: center; /* Align items horizontally at center */
-    margin-top: 10px; /* Add margin to separate from the title */
-    background-color: #f0f0f0; /* Add background color */
-    padding: 10px; /* Add padding for spacing */
-    border-radius: 5px; /* Add border radius for rounded corners */
-}
-
-.navigation ul li {
-    margin-right: 20px; /* Adjust spacing between items */
-}
-
-.navigation ul li:last-child {
-    margin-right: 0; /* Remove right margin from last item */
-}
-
-.navigation ul li a {
-    text-decoration: none; /* Remove underline from links */
-    color: #333; /* Adjust link color */
-}
-
-.navigation ul li a:hover {
-    color: #555; /* Adjust link color on hover */
-}
-
-@media screen and (max-width: 768px) {
-    /* Styles for small screens (e.g., mobile devices) */
-    .navigation ul {
-        flex-direction: column;
-    }
-}
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #dd6300;
-    padding: 10px;
-    text-align: center;
-    z-index: 1000; /* Ensure the header appears above other content */
-}
-.navigation ul li a.active {
-    /* Define the styles for the active navigation link */
-    background-color: #00b5dd; /* Change background color */
-    color: #ffffff; /* Change text color */
-    font-weight: bold; /* Increase font weight */
-}
-.destination-link {
-    text-align: center; /* Center the link */
-    margin-top: 400px; /* Add some space between the card and the link */
-  }
-  .tour-card {
-  width: 300px; /* Adjust width as needed */
-  height: 200px; /* Adjust height as needed */
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 20px;
-}
-.tour-card {
-    width: 300px; /* Adjust width as needed */
-    height: 200px; /* Adjust height as needed */
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 20px;
-  }
-  
-  .destination-link {
-    text-align: center; /* Center the link */
-  }
-  .tour-card {
-    width: 300px; /* Adjust width as needed */
-    height: 200px; /* Adjust height as needed */
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 20px;
-  }
-  
-  .destination-link {
-    text-align: center; /* Center the link */
- 
-    .tour-card {
-        background-size: cover;
-        background-position: center;
-        /* Add other styles as needed */
-      }
-      .tour-card {
-        width: 300px; /* Adjust width as needed */
-        height: 200px; /* Adjust height as needed */
-        background-size: contain;
-        background-position: center;
-        margin-bottom: 20px;
-    }
-    .tour-cards {
-        display: flex;
-        justify-content: space-around; /* Adjust alignment as needed */
-      }
-      
-      .tour-card {
-        text-align: center;
-        width: 200px; /* Adjust width as needed */
-      }
-      
-      .tour-card img {
-        width: 100%;
-        height: auto;
-      }
-      .tour-cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around; /* Adjust as needed */
-        align-items: flex-start; /* Align items to the start of the flex container */
-        gap: 20px; /* Add some space between cards */
-      }
-      .tour-card {
-        flex-basis: calc(50% - 20px); /* Two cards per row with a 20px gap */
-        margin-bottom: 20px; /* Add some space between rows */
-      }
-      .tour-cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: flex-start;
-      }
-      /* Ensure the header appears above other content */
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #dd6300;
-    padding: 10px;
-    text-align: center;
-    z-index: 1000; /* Ensure the header appears above other content */
-}
-
-/* Define the styles for the active navigation link */
-.navigation ul li a.active {
-    background-color: #00b5dd; /* Change background color */
-    color: #ffffff; /* Change text color */
-    font-weight: bold; /* Increase font weight */
-}
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.title {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    font-size: 1.1em;
-    color: #ffffff;
-}
-
-.hero {
-    text-align: center;
-}
-
-.hero img {
-    width: 100%;
+.tour-card img {
+    max-width: 100%;
     height: auto;
+    display: block;
 }
 
-.tours {
-    padding: 40px 0;
-}
-
-.tours h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.tour-card {
-    background-color: #b1aa9e;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-    display: inline-block;
-    width: 30%;
-    transition: all 0.3s ease-in-out;
-}
-
-.tour-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 5px rgba(207, 156, 79, 0.1);
-}
-
+/* Activities and contact section styles */
 .activities,
 .contact {
     text-align: center;
@@ -299,38 +111,174 @@ body {
     margin-bottom: 20px;
 }
 
-footer {
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content {
+    flex: 1;
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
     text-align: center;
-    background-color: #f0f0f0;
-    padding: 20px;
-}
+    padding: 1rem 0;
+  }
+  
 
-/* Navigation styles */
-.navigation ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0;
-    display: flex; /* Change display to flex */
-    justify-content: center; /* Align items horizontally at center */
-    margin-top: 10px; /* Add margin to separate from the title */
-    background-color: #f0f0f0; /* Add background color */
-    padding: 10px; /* Add padding for spacing */
-    border-radius: 5px; /* Add border radius for rounded corners */
-}
-
-.navigation ul li {
-    margin-right: 20px; /* Adjust spacing between items */
-}
-
+/* Media queries for responsive design */
 @media screen and (max-width: 768px) {
-    /* Styles for small screens (e.g., mobile devices) */
     .navigation ul {
-        flex-direction: column;
+        flex-direction: column; /* Stack navigation items vertically on small screens */
+    }
+
+    .tour-card {
+        flex: 0 1 100%; /* Full width cards on small screens */
+    }
+
+    .header,
+    .navigation {
+        position: static; /* Reset position for scrolling */
     }
 }
 
-/* Add any additional styles as needed */
-.tour-cards {
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 1.5em; /* Smaller font size for smaller screens */
+    }
+
+    .subtitle {
+        font-size: 1em;
+    }
+
+    .navigation ul li a {
+        padding: 10px; /* Larger tap targets for smaller screens */
+    }
+}
+/* Add this to your CSS file */
+
+.hamburger-menu {
+    display: none; /* Hidden by default */
+    font-size: 24px; /* Adjust size as needed */
+    cursor: pointer;
+  }
+  
+  /* Small screens */
+  @media screen and (max-width: 768px) {
+    .hamburger-menu {
+      display: block; /* Show the hamburger menu */
+      position: absolute;
+      top: 20px; /* Adjust as needed */
+      left: 0;
+      right: 20px; /* Adjust as needed */
+      height: calc(100vh - 60px); /* Fixed height */
+      background-color: #f0f0f0;
+      z-index: 1001; /* Above other content */
+    }
+  
+    .navigation {
+      display: none; /* Hide the navigation list */
+      position: absolute;
+      top: 20px; /* Align with the hamburger menu */
+      left: 20px; /* Position beside the hamburger menu */
+      width: calc(100% - 40px); /* Full width minus padding */
+      background-color: #f0f0f0; /* Match the navigation background */
+    }
+ 
+    .navigation.active {
+        display: flex; /* Show the navigation when active */
+    }    
+    .navigation ul {
+      padding: 0;
+      margin: 0
+      list-style-type: none;
+    }
+  
+    .navigation ul li {
+      padding: 10px 20px; /* Padding inside the items */
+      border-bottom: 1px solid#ccc; /* Add a separator between items *
+    }
+    
+
+    
+.navigation ul li a    {
+      display: block;
+      padding: 10px; /* Larger click area */
+      color: #333;
+      text-decoration: none;
+    }
+  }
+  .hero {
+    position: relative;
+    height: 200px; /* Adjust height as needed */
+    background-image: url('C:/Users/al.hagos/Desktop/FIles/Leo%20Website%20Project/Images/OmoValley_4.jpg');
+    background-size: cover; /* Ensure the image covers the full area */
+    background-position: center; /* Keep the image centered */
+    color: #fff;
+    text-align: center;
+    padding: 200px 0;
+    margin-bottom: 50px; /* Space below the hero section */
+  }
+  /* This class will be added or removed by JavaScript */
+.navigation.active {
+    display: flex; /* Show the navigation */
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (max-width: 768px) {
+    .navigation.active {
+      display: block; /* Change to block to show all items */
+    }
+  
+    .navigation ul {
+      display: block; /* Ensure the list itself is also displayed */
+    }
+  
+    .navigation ul li {
+      display: block; /* Ensure each list item is displayed */
+    }
+  }
+  .navigation ul li a:hover,
+  .navigation ul li a.active {
+        background-color: #444;
+  }
+  footer {
+    background: #333; /* Dark background for the footer */
+    color: #fff; /* White text color */
+    text-align: center; /* Center-align the text */
+    padding: 1rem 0; /* Padding above and below the text */
+    font-size: 0.8rem; /* Smaller font size for the footer text */
+  }
+  footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
     display: flex;
-    justify-content: center; /* Align items horizontally at the center */
-    flex-wrap: wrap; /* Ensure the cards wrap properly */
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-left,
+  .footer-right {
+    padding: 0 10%; /* Adust the percentage as needed */
+  }
+  
+  @media (max-width: 768px) {
+    footer {
+      flex-direction: column;
+    }
+  
+    .footer-left,
+    .footer-right {
+      padding: 0.5rem 1rem;
+    }
+  }
   

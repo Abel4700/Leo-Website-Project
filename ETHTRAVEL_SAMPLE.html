@@ -2,30 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ethiopia Travel Buddy</title>
   <link rel="stylesheet" href="ethiopiatravelbuddy_2.css">
 </head>
 <body>
+  <div class="content">
   <header class="header">
     <h1 class="title">Ethiopia Travel Buddy</h1>
     <p class="subtitle">Your Trusted Travel Companion</p>
+    </header>
+    <!-- Add this inside the <body> tag, after the <header> -->
+<button class="hamburger-menu" onclick="toggleMenu()">☰</button>
+
     <nav class="navigation">
         <ul>
-            <li><a href="ETHTRAVEL_SAMPLE.html">Home</a></li>
-            <li><a href="ETHTRAVEL_ABOUT US.html">About Us</a></li>
+            <li><a href="ETHTRAVEL_SAMPLE.html" class="active">Home</a></li>
+            <li><a href="ETHTRAVEL_ABOUTUS.html">About Us</a></li>
             <li><a href="ETHTRAVEL_BLOG.html">Blog</a></li>
             <li><a href="ETHTRAVEL_TESTIMONIALS.html">Testimonials</a></li>
-            <li><a href="ETHTRAVEL_CONTACT US.html">Contact Us</a></li>
+            <li><a href="ETHTRAVEL_CONTACTUS_2.html">Contact Us</a></li>
             <li><a href="ETHTRAVEL_FAQS.html">FAQs</a></li>
         </ul>
     </nav>
-  </header>
 
   <section class="hero">
+    
     <div class="image-container">
-      <img src="C:\Users\al.hagos\Desktop\FIles\Leo Website Project\Images\Omo Valley_4.jpg" alt="Omo Valley">
+</div>
+    <div class="hero-content">
+      <h2>Welcome to Ethiopia Travel Buddy</h2>
+      <p>Explore the wonders of Ethiopia with us</p>
     </div>
+    
   </section>
 
   <section class="tour-cards">
@@ -69,7 +78,7 @@
     </div>
     
     <div class="tour-card addis-ababa" data-destination="addis ababa.html">
-      <a href="addis ababa.html">
+      <a href="addisababa.html">
       <!-- Place your image here -->
      
       <h3>Addis Ababa</h3>
@@ -103,12 +112,14 @@
       <li><i class="fas fa-envelope"></i>info@ethiopiatravelbuddy.com</li>
     </ul>
   </section>
+</div>
 
-  <footer>
-    <p>&copy; Ethiopia Travel Buddy. All Rights Reserved.</p>
-  </footer>
+<footer>
+  <div class="footer-left">© 2024 Ethiopia Travel Buddy. All Rights Reserved.</div>
+  <div class="footer-right">Powered by <strong>Open Mindx Creatives & Learning</strong></div>
+</footer>
   <script src="style1.js"></script>
-  <script src="style2_Card Clickable.js"></script>
-
+  <script src="style2_CardClickable.js"></script>
+  <script src="Style3_Hamburger_menu.js"></script>   
 </body>
 </html>
