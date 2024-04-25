@@ -183,4 +183,60 @@ body {
       padding: 0.5rem 1rem;
     }
   }
-  
+  /* Contact Section Styles */
+.contact-section {
+  background: #fff; /* White background for the section */
+  padding: 2em;
+  margin: 2em auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.contact-section h2 {
+  color: #dd6300; /* Match the header color */
+  margin-bottom: 1em;
+}
+
+.contact-form {
+  background: #f9f9f9; /* Light grey background for the form */
+  padding: 1em;
+  border-radius: 4px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  background-color: #dd6300; /* Match the button color with the header */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #bb5500; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-section {
+    margin: 1em;
+    padding: 1em;
+  }
+}

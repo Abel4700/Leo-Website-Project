@@ -215,3 +215,187 @@ footer {
     padding: 0.5rem 1rem;
   }
 }
+/* FAQ Content Styles */
+.faq-content {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 1em;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.faq-item {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-item h3 {
+  margin: 0;
+  padding: 1em;
+  background: #f9f9f9;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.faq-item h3:hover {
+  background-color: #f0f0f0;
+}
+
+.faq-item p {
+  margin: 0;
+  padding: 0 1em 1em;
+  display: none;
+  transition: all 0.3s ease;
+}
+
+/* Accordion toggle */
+.faq-item.active p {
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .faq-content {
+    margin: 1em;
+    padding: 0;
+  }
+}
+/* FAQ Content Styles */
+.faq-content {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 1em;
+  background: #fff; /* White background for the container */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.faq-item {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-item h3 {
+  margin: 0;
+  padding: 1em;
+  background: #e7f1ff; /* Light blue background for the question */
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.faq-item h3:hover {
+  background-color: #d0e2ff; /* Slightly darker blue on hover */
+}
+
+.faq-item p {
+  margin: 0;
+  padding: 0 1em 1em;
+  background: #f9f9f9; /* Light grey background for the answer */
+  display: none;
+  transition: all 0.3s ease;
+}
+
+/* Accordion toggle */
+.faq-item.active p {
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .faq-content {
+    margin: 1em;
+    padding: 0;
+  }
+}
+/* Contact Section Styles */
+.contact-section {
+  background: #fff; /* White background for the section */
+  padding: 2em;
+  margin: 2em auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.contact-section h2 {
+  color: #dd6300; /* Match the header color */
+  margin-bottom: 1em;
+}
+
+.contact-form {
+  background: #f9f9f9; /* Light grey background for the form */
+  padding: 3em;
+  border-radius: 4px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  background-color: #dd6300; /* Match the button color with the header */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #bb5500; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-section {
+    margin: 1em;
+    padding: 1em;
+  }
+}
+footer {
+  position: fixed; /* Fix the footer to the bottom of the page */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #333; /* Dark background for the footer */
+  color: #fff; /* White text color */
+  text-align: center; /* Center-align the text */
+  padding: 1rem 0; /* Padding above and below the text */
+  font-size: 0.8rem; /* Smaller font size for the footer text */
+  z-index: 1000; /* Ensure the footer stays above other content */
+}
+
+/* Adjust the padding of the main content so it doesn't get hidden behind the fixed footer */
+.content {
+  padding-bottom: 3rem; /* Adjust the value based on your footer's height */
+}
+
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+  }
+}
