@@ -449,3 +449,73 @@ html, body {
     }
   
   }
+  ..tour-card-container {
+    margin-bottom: 2em; /* Space below the entire card container */
+  }
+  
+  .tour-card {
+    /* Your existing styles for the card */
+    /* Make sure to set a specific height for the card */
+    height: 200px; /* Example height, adjust as needed */
+  }
+  
+  .tour-card a {
+    display: block;
+    height: 100%;
+  }
+  
+  .omo .omo-valley {
+    background-image: url('Images/Omo/ Valley_1.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .tour-card-title {
+    text-align: center; /* Center the title text */
+    margin-top: 0.5em; /* Space above the title */
+    /* Additional styling for the title as needed */
+  }
+  .tour-card {
+    /* Your existing styles for the card */
+  }
+  
+  .tour-card a {
+    display: block;
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* The color will be inherited from the parent element */
+  }
+  
+  .card-image {
+    /* Your existing styles for the image */
+  }
+  
+  .tour-card-title {
+    text-align: center; /* Center the title text */
+    margin-top: 0.5em; /* Space above the title */
+    /* Additional styling for the title as needed */
+  }
+  .tour-card-container {
+    text-align: center; /* Center the content */
+    margin-bottom: 2em; /* Space below the entire card container */
+  }
+
+  .tour-card {
+    /* Your existing styles for the card */
+  }
+  
+  .tour-card a {
+    display: block;
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* The color will be inherited from the parent element */
+  }
+  
+  .card-image {
+    /* Your existing styles for the image */
+  }
+  
+  .tour-card-title {
+    text-align: center; /* Center the title text */
+    margin-top: 0.5em; /* Space above the title */
+    /* Additional styling for the title as needed */
+  }
+  
