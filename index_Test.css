@@ -449,7 +449,7 @@ html, body {
     }
   
   }
-  ..tour-card-container {
+  .tour-card-container {
     margin-bottom: 2em; /* Space below the entire card container */
   }
   
@@ -464,12 +464,7 @@ html, body {
     height: 100%;
   }
   
-  .omo .omo-valley {
-    background-image: url('Images/Omo/ Valley_1.jpg');
-    background-size: cover;
-    background-position: center;
-  }
-  
+ 
   .tour-card-title {
     text-align: center; /* Center the title text */
     margin-top: 0.5em; /* Space above the title */
@@ -518,4 +513,122 @@ html, body {
     margin-top: 0.5em; /* Space above the title */
     /* Additional styling for the title as needed */
   }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .header {
+    background: #dd6300;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  .title {
+    margin: 0;
+  }
+  
+  .subtitle {
+    margin: 0;
+    font-style: italic;
+  }
+  
+  .navigation ul {
+    list-style-type: none;
+    background: #555;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+  
+  .navigation ul li {
+    display: inline;
+  }
+  
+  .navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .navigation ul li a.active,
+  .navigation ul li a:hover {
+    background-color: #444;
+  }
+  
+  .hero {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    height: 100vh;
+  }
+  
+  .image-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    /* Add more styles as needed */
+  }
+  
+  .tour-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .tour-card-container {
+    width: calc(50% - 10px);
+    margin-bottom: 1em;
+  }
+  
+  .tour-card {
+    background-color: #9ea2b1;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+  }
+  
+  .tour-card h3 {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 0.5em 1em;
+  }
+  
+  .tour-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 
   
