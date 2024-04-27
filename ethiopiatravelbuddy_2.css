@@ -399,6 +399,53 @@ html, body {
     text-align: center;
   }
   
-  /* Additional styles remain unchanged */
+  .tour-card {
+    position: relative;
+    color: #fff; /* Set text color to white for better visibility */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; /* Other styles for the card */
+  }
   
   
+  .omo-valley {
+    background-image: url('Images/Omo Valley_1.jpg');
+  }
+  
+  .danakil-depression {
+    background-image: url('Images/Danakil_Sulfer.jpg');
+  }
+  
+  .bale-mountains {
+    background-image: url('Images/Bale_8.jpg');
+  }
+  .harar {
+    background-image: url('Images/Harar_Wall.jpeg');
+  }
+
+  .northern-highlands {
+    background-image: url('Images/Norther_Mountain.jpg');
+  }
+  .addis-ababa {
+    background-image: url('Images/Addis Ababa_Lion.jpg');
+  }
+
+  .western-ethiopia {
+    background-image: url('Images/Western_23.jpg');
+  }
+ 
+  .tour-card h3 {
+    position: relative;
+    z-index: 1; /* Ensure the text is above the background image */
+    background: rgba(0, 0, 0, 0.5); /* Optional: dark overlay for better text visibility */
+    display: inline-block;
+    padding: 0.5em 1em; /* Adjust padding as needed */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .tour-card {
+      /* Adjustments for smaller screens */
+    }
+  }
+ 
