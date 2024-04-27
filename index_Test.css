@@ -71,45 +71,12 @@
     z-index: 2; /* Ensure it's above the image */
 }
 
-/* Tour cards section styles */
-.tour-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 0px;
-}
-
-.tour-card {
-    flex: 0 1 calc(40% - 50px);
-    background-color: #9ea2b1;
-    margin: 20px;
-    padding: 60px;
-    border-radius: 5px;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-}
-
-.tour-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-}
-
-.tour-card img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
 
 /* Activities and contact section styles */
-.activities,
 .contact {
     text-align: center;
 }
 
-.activities h2,
-.contact h2 {
-    margin-bottom: 20px;
-}
 
 html, body {
     height: 100%;
@@ -433,6 +400,10 @@ html, body {
   .western-ethiopia {
     background-image: url('Images/Western_23.jpg');
   }
+
+  .western-ethiopia {
+    background-image: url('Images/Western_23.jpg');
+  }
  
   .tour-card h3 {
     position: relative;
@@ -615,3 +586,188 @@ html, body {
     transform: scale(1.05);
     box-shadow: 0px 0px ;
   }
+  /* Description Section Styles */
+.card-description {
+  text-align: center;
+  padding: 2em;
+  background-color: #f4f4f4; /* Adjust the background color as needed */
+  margin-bottom: 2em; /* Space between the description and the cards */
+}
+
+.card-description h2 {
+  margin-bottom: 0.5em; /* Space below the heading */
+  color: #dd6300; /* Match the color with your header or as desired */
+}
+
+.card-description p {
+  color: #333; /* Text color for the description */
+  max-width: 800px; /* Adjust the width as needed */
+  margin: auto; /* Center the paragraph in the section */
+}
+/* Tour Cards Section */
+.tour-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px; /* Adjust the gap between cards */
+  padding: 1em 0; /* Padding above and below the card section */
+}
+
+.tour-card-container {
+  width: calc(33% - 20px); /* Three cards per row with adjusted spacing */
+  margin-bottom: 2em; /* Space below each card container */
+}
+
+.tour-card {
+  background-color: #fff; /* White background for the card */
+  border-radius: 10px; /* Rounded corners for the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  overflow: hidden; /* Ensures content fits within the rounded corners */
+  transition: transform 0.3s ease-in-out; /* Smooth scaling effect on hover */
+}
+
+.tour-card:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.card-image {
+  height: 200px; /* Fixed height for images */
+  background-size: cover;
+  background-position: center;
+}
+
+.tour-card-title {
+  padding: 1em; /* Padding inside the title container */
+  background-color: #f7f7f7; /* Slightly off-white background for the title */
+  color: #333; /* Dark text color for contrast */
+  font-size: 1.2em; /* Slightly larger font size for the title */
+  text-decoration: none; /* No underline for the title link */
+}
+
+.tour-card-title a {
+  color: inherit; /* Inherits color from the tour-card-title */
+  text-decoration: none; /* No underline for the link */
+}
+
+.tour-card-title a:hover {
+  text-decoration: underline; /* Underline on hover for the link */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .tour-card-container {
+    width: calc(50% - 20px); /* Two cards per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .tour-card-container {
+    width: 100%; /* Full width cards on small screens */
+  }
+}
+/* Contact Us Button Styles */
+.contact-us-button-container {
+  text-align: center; /* Center the button container */
+  margin-top: 2em; /* Space above the button */
+}
+
+.contact-us-button {
+  background-color: #dd6300; /* Button color */
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Padding inside the button */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline from the link */
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+.contact-us-button:hover {
+  background-color: #bb5500; /* Darker shade on hover */
+}
+/* Social Media Icons Styles */
+.social-media-icons-container {
+  text-align: center; /* Center the icons container */
+  margin-top: 1em; /* Space above the icons */
+}
+
+.social-media-icon {
+  margin: 0 10px; /* Space between icons */
+  font-size: 24px; /* Size of the Font Awesome icons */
+  color: #333; /* Icon color, change as needed */
+  transition: color 0.3s; /* Smooth color transition on hover */
+  text-decoration: none; /* Removes the underline */
+}
+
+.social-media-icon:hover,
+.social-media-icon:focus {
+  color: #dd6300; /* Icon color on hover, change as needed */
+  text-decoration: none; /* Ensures no underline on hover */
+}
+
+/* Custom styles for the Twitter SVG icon */
+.social-media-icon img[src*="x-twitter.svg"] {
+  width: 21px; /* Width of the custom Twitter SVG */
+  height: 27px; /* Height of the custom Twitter SVG */
+  vertical-align: middle; /* Aligns the SVG vertically with text icons */
+}
+.contact-us-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-us-button-container,
+.social-media-icons-container,
+.contact {
+  margin-bottom: 20px; /* Adjust the space between elements as needed */
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* Add other styles for your footer here */
+}
+.footer {
+  clear: both;
+  /* Other styles */
+}
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background: #333; /* Example background color for the footer */
+  color: white; /* Example text color for the footer */
+  text-align: center;
+  padding: 20px 0;
+}
+.contact-info {
+  list-style: none; /* This removes the bullet points */
+  padding: 0; /* This removes the default padding */
+}
+
+.contact-info li {
+  /* Add styles for your list items here */
+}
+.space-below-button {
+  margin-bottom: 1em; /* Adjust the value as needed to increase or decrease the space */
+}
