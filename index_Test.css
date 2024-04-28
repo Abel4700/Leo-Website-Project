@@ -771,3 +771,20 @@ footer {
 .space-below-button {
   margin-bottom: 1em; /* Adjust the value as needed to increase or decrease the space */
 }
+.social-media-icons-container {
+  /* Container styles */
+}
+
+.social-media-icon {
+  /* Common icon styles */
+  width: 24px; /* Adjust size as needed */
+  height: 24px; /* Adjust size as needed */
+}
+
+/* Brand colors */
+.facebook { color: #3b5998; }
+.twitter img { width: 21px; height: 27px; } /* Custom Twitter SVG size */
+.instagram { color: #e4405f; }
+.whatsapp { color: #25D366; }
+.telegram { color: #0088cc; }
+.discord { color: #7289da; }
