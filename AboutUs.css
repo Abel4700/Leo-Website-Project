@@ -72,9 +72,11 @@ body {
 /* About Us section styles */
 .about-us {
   max-width: 1000px;
-  margin: 0px auto 0px; /* Adjusted margin to push it below the hero section */
+  margin: 0 auto; /* Adjusted margin to push it below the hero section */
   padding: 40px;
   text-align: center;
+  position: relative;
+  top: 5%;
 }
 
 .mission-statement,
@@ -362,4 +364,136 @@ footer {
       padding: 0.5rem 1rem;
     }
   }
-  
+  /* About Us Section Styles */
+.about-us {
+  background-color: #f4f4f4; /* Light background for the section */
+  padding: 40px;
+  border-top: 10px solid #8d5524; /* Earthy color top border */
+}
+
+.about-us h2 {
+  color: #8d5524; /* Earthy color for headings */
+  font-family: 'Geez', sans-serif; /* Font that reflects Ethiopian script */
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  color: #333; /* Dark grey color for text */
+  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Mission Statement Styles */
+.mission-statement {
+  background-color: #fff;
+  padding: 40px;
+  text-align: center; /* Center align the content */
+}
+
+.mission-statement h2 {
+  color: #c19a6b; /* Soft brown color for headings */
+  font-family: 'Geez', sans-serif;
+}
+
+.mission-statement p {
+  color: #666;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Why Choose Us Section Styles */
+.why-choose-us {
+  background-color: #e6e2d3; /* Light earthy background */
+  padding: 40px;
+}
+
+.why-choose-us h2,
+.why-choose-us h3 {
+  color: #8d5524;
+  font-family: 'Geez', sans-serif;
+}
+
+.why-choose-us p {
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+.why-choose-us ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+}
+
+.why-choose-us li {
+  background: #fff; /* White background for list items */
+  margin-bottom: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+/* Our Team Section Styles */
+.our-team {
+  background-color: #fff;
+  padding: 40px;
+}
+
+.our-team h2 {
+  color: #8d5524;
+  font-family: 'Geez', sans-serif;
+  text-align: center;
+}
+
+.our-team .team-members {
+  display: flex;
+  justify-content: space-around; /* Evenly space team member photos */
+  flex-wrap: wrap; /* Wrap onto the next line on smaller screens */
+}
+
+.our-team .team-member {
+  margin: 20px;
+  text-align: center; /* Center align the text */
+}
+
+.our-team .team-member img {
+  width: 150px; /* Set a fixed width for images */
+  height: 150px;
+  border-radius: 50%; /* Circular images */
+  margin-bottom: 10px;
+}
+
+.our-team .team-member h3 {
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+.our-team .team-member p {
+  color: #666;
+  font-family: 'Roboto', sans-serif;
+}
+/* About Us Section with Side-by-Side Layout */
+.about-us-container {
+  display: flex; /* Use flexbox to create a side-by-side layout */
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space out the content */
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto; /* Center the container */
+}
+
+.about-us-text {
+  flex: 1; /* Take up half the width of the container */
+  padding-right: 20px; /* Add some space between the text and the images */
+}
+
+.about-us-images {
+  flex: 1; /* Take up the other half of the width */
+  display: flex; /* Use flexbox to layout images */
+  justify-content: space-around; /* Space out the images */
+  flex-wrap: wrap; /* Allow images to wrap onto the next line */
+}
+
+.about-us-image {
+  width: calc(50% - 10px); /* Calculate width to allow for margin */
+  margin: 5px; /* Add margin around images */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: Add shadow for depth */
+}
+
+/* Ensure you have a container in your HTML to apply these styles */

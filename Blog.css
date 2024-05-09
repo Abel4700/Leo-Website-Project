@@ -189,7 +189,13 @@ footer {
   }
 }
 
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+  .navigation ul {
+      flex-direction: column; /* Stack navigation items vertically on small screens */
+  }
 
+  
 footer {
   background: #333; /* Dark background for the footer */
   color: #fff; /* White text color */
@@ -220,4 +226,100 @@ footer {
   .footer-right {
     padding: 0.5rem 1rem;
   }
+@media screen and (max-width: 480px) {
+  .title {
+      font-size: 1.5em; /* Smaller font size for smaller screens */
+  }
+
+  .subtitle {
+      font-size: 1em;
+  }
+
+  .navigation ul li a {
+      padding: 10px; /* Larger tap targets for smaller screens */
+  }
+}
+/* Add this to your CSS file */
+
+.hamburger-menu {
+  display: none; /* Hidden by default */
+  font-size: 24px; /* Adjust size as needed */
+  cursor: pointer;
+}
+
+/* Small screens */
+@media screen and (max-width: 768px) {
+  .hamburger-menu {
+    display: block; /* Show the hamburger menu */
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 0;
+    right: 20px; /* Adjust as needed */
+    height: calc(100vh - 60px); /* Fixed height */
+    background-color: #f0f0f0;
+    z-index: 1001; /* Above other content */
+  }
+
+  .navigation {
+    display: none; /* Hide the navigation list */
+    position: absolute;
+    top: 20px; /* Align with the hamburger menu */
+    left: 20px; /* Position beside the hamburger menu */
+    width: calc(100% - 40px); /* Full width minus padding */
+    background-color: #f0f0f0; /* Match the navigation background */
+  }
+
+  .navigation.active {
+      display: flex; /* Show the navigation when active */
+  }    
+  .navigation ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  .navigation ul li {
+    padding: 10px 20px; /* Padding inside the items */
+    border-bottom: 1px solid#ccc; /* Add a separator between items *
+  }
+  
+
+  
+.navigation ul li a    {
+    display: block;
+    padding: 10px; /* Larger click area */
+    color: #333;
+    text-decoration: none;
+  }
+}
+.image-container {
+  width: 100%;
+  height: 100vh; /* Adjust the height as needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* This class will be added or removed by JavaScript */
+.navigation.active {
+  display: flex; /* Show the navigation */
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .navigation.active {
+    display: block; /* Change to block to show all items */
+  }
+
+  .navigation ul {
+    display: block; /* Ensure the list itself is also displayed */
+  }
+
+  .navigation ul li {
+    display: block; /* Ensure each list item is displayed */
+  }
+}
+.navigation ul li a:hover,
+.navigation ul li a.active {
+      background-color: #444;
 }

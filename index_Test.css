@@ -788,3 +788,21 @@ footer {
 .whatsapp { color: #25D366; }
 .telegram { color: #0088cc; }
 .discord { color: #7289da; }
+/* Remove duplicate style for contact us button container */
+.contact-us-button-container {
+  text-align: center; /* Center-align the button container */
+}
+
+/* Remove duplicate style for contact us button */
+.contact-us-button {
+  background-color: #dd6300; /* Match the button color with the header */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-us-button:hover {
+  background-color: #bb5500; /* Darker shade on hover */
+}
