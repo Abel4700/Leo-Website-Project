@@ -103,7 +103,7 @@ header {
 /* Navigation styles */
 .navigation ul {
     list-style-type: none; /* Remove bullet points */
-    padding: 0;
+    
     display: flex; /* Change display to flex */
     justify-content: center; /* Align items horizontally at center */
     margin-top: 10px; /* Add margin to separate from the title */
@@ -135,4 +135,40 @@ header {
     background-color: rgba(89, 58, 58, 0.9); /* Set a slightly transparent white background */
     border-radius: 10px; /* Add border radius for rounded corners */
   }
+  .hero {
+    position: relative; /* Stack elements within the hero section */
+    text-align: center;
+    padding: 100px 0; /* Adjust padding for content placement */
+    background-color: #f0f8ff; /* Add a light background color */
+  }
   
+  .hero img {
+    width: 100%; /* Set image to fill the width of the hero section */
+    height: auto; /* Maintain image aspect ratio */
+    opacity: 0.7; /* Reduce image opacity for text readability */
+  }
+  
+  .hero h1 {
+    color: #333; /* Set text color for heading */
+    font-size: 3em; /* Increase heading font size */
+    margin-bottom: 20px; /* Add spacing below the heading */
+  }
+  
+  .hero p {
+    color: #666; /* Set text color for paragraph */
+    font-size: 1.2em; /* Set paragraph font size */
+    margin-bottom: 30px; /* Add spacing below the paragraph */
+  }
+  
+  .hero .btn {
+    background-color: #dd6300; /* Set button background color */
+    color: #fff; /* Set button text color */
+    padding: 10px 20px; /* Set button padding */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add rounded corners to the button */
+    cursor: pointer; /* Indicate clickable element */
+  }
+  
+  .hero .btn:hover { /* Button hover effect */
+    background-color: #ba4a00; /* Change button background color on hover */
+  }
